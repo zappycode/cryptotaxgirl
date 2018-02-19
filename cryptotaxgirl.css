@@ -1,0 +1,67 @@
+body {
+    background-color: #efefef;
+    font-family: 'Raleway', sans-serif;
+    color: #353535;
+}
+
+#title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #353535;
+}
+
+@media (max-width: 540px) {
+    #title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #353535;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-small {
+        width: 600px;
+    }
+} 
+
+.container-small {
+    max-width: 100%;
+}
+
+.no-blue-link {
+   color: inherit; 
+}
+.no-blue-link:hover 
+{
+     color:inherit;
+}
+
+#buy-course-text {
+    background-color: #f33645;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#contact-me-text {
+    background-color: #f7bd2c;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#schedule-text {
+    background-color: #3dc7a8;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.buttons {
+    border-width: 2px;
+    border-style: solid;
+    border-color: 353535;
+    background-color: #ffffff;
+}
+
+.wrap {
+    font-size: 25px;
+    font-weight: bold;
+}

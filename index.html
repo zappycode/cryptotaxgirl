@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="cryptotaxgirl.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+        <link rel="icon" type="image/png" href="images/bitcoin.png" />
+
+        <title>Crypto Tax Girl</title>
+    </head>
+    <body>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="" id="title">Crypto Tax Girl</a>
+            </li>
+
+        </ul>
+
+        <div class="container container-small">
+            <!-- Video -->
+            <div class="row pb-3">
+                <div class="col">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe type="text/html" src="https://www.youtube.com/embed/Oaq5u0SYDZw?showinfo=0" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            <!-- Explanation text -->
+            <div class="row pb-3">
+                <div class="col text-center typewrite" data-period="2000" data-type='[ "Bitcoin","Trading","Ethereum","Selling crypto","Litecoin","Gains","Ripple","Using Crypto","Mining","Forks","Losses"]'>
+                    <span class="wrap"></span>
+                </div>
+            </div>
+            <!-- Buy Course or Tax Advice -->
+            <div class="row text-center">
+                <a class="col-sm-4 no-blue-link pb-4" href="https://learn.zappycode.com/p/crypto-tax-girl/">
+                    <div class="buttons">
+                        <h4 id="buy-course-text" class="pt-1 pb-1">Buy the<br />Course</h4>
+                        <img src="images/buy-course.png" class="img-fluid pl-5 pr-5 pb-1" />
+                    </div>
+                </a>
+                <a class="col-sm-4 no-blue-link pb-4" href="mailto:cryptotaxgirl@gmail.com?Subject=Crypto%20Tax%20Help">
+                    <div class="buttons">
+                        <h4 id="contact-me-text" class="pt-1 pb-1">Contact<br />Me</h4>
+                        <img src="images/contact-me.png" class="img-fluid pl-5 pr-5 pb-1" />
+                    </div>
+                </a>
+                <a class="col-sm-4 no-blue-link pb-4" href="https://calendly.com/cryptotaxgirl/30min">
+                    <div class="buttons">
+                        <h4 id="schedule-text" class="pt-1 pb-1">Schedule a<br />Consultation</h4>
+                        <img src="images/schedule.png" class="img-fluid pl-5 pr-5 pb-1" />
+                    </div>
+                </a>
+            </div>
+            <!-- Pic of Laura and About Me -->
+            <div class="row pb-4">
+                <div class="col-sm-4 pb-3">
+                    <img src="images/laura-circle.png" class="img-fluid" />
+                </div>
+                <div class="col-sm-8">
+                    <p>Hi! I’m Laura and I am a CPA and cryptocurrency tax specialist. I am here to bring tax clarity to those who have bought, sold, mined, or traded in cryptocurrency, or to those who are looking to do so in the future.</p>
+                    <p>2017 was a big year for crypto, but as we saw those numbers going up, I don’t think many of us were thinking about the potential tax consequences. Now that the year is over, my goal is to educate you on how cryptocurrency is taxed in order to help you determine if you owe taxes on your trades, and if so, how much.</p>
+                    <p>I have created a course that walks you through everything you need to know when it comes to crypto taxation. We will discuss taxable events, gains, losses, trading, like-kind exchanges, mining, forks, and more.</p>
+                    <p>Cryptocurrency may be a relatively new asset class, but this is only the beginning, so I can also help you with some tax strategies to use going forward.</p>
+                    <p>You may think that the lack of IRS guidance is an excuse to not report your crypto dealings on your tax return, but unfortunately, not reporting your crypto gains/losses is tax fraud, and can result in high penalties and interest down the road. Let me help you get tax compliant and get the peace of mind that you need.</p>
+                </div>
+            </div>
+            <!-- Social Links -->
+            <div class="row justify-content-around pb-4">
+                <div class="col col-2">
+                    <img src="images/facebook.png" class="img-fluid" />
+                </div>
+                <div class="col col-2">
+                    <img src="images/instagram.png" class="img-fluid" />
+                </div>
+                <div class="col col-2">
+                    <a href="twiiter.com/cryptotaxgirl"><img src="images/twitter.png" class="img-fluid" /></a>
+                </div>
+            </div>
+            <!-- Disclaimer -->
+            <div class="row pb-3 text-center">
+                <div class="col">
+                <small>Disclaimer: This material has been prepared for informational purposes only, and is not intended to provide, and should not be relied on for, tax, legal or accounting advice. You should consult your own tax, legal and accounting advisors before engaging in any transaction.</small>
+                    </div>
+            </div>
+        </div>
+
+        <!-- JavaScript -->
+        <script>
+            var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">Get tax clarity on: '+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+        </script>
+        
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+        
+        <!-- Sumo for popup -->
+        <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='0970776c888b392b2f99005ab7035da2dc19ae220012e9c258ed8b9989936193';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+    </body>
+</html>
