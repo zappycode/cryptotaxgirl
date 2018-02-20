@@ -65,3 +65,12 @@ body {
     font-size: 25px;
     font-weight: bold;
 }
+
+.greybackground {
+    background-color: #353535;
+}
+
+.whitetext {
+    color: white;
+    font-size: 22px;
+}
