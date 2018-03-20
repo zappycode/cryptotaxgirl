@@ -54,6 +54,37 @@ body {
     font-weight: bold;
 }
 
+.thinborder {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #353535;
+}
+
+.no-padding {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+#tipjartitle {
+    background-color: #3dc7a8;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px;
+    border-bottom: 4px solid;
+    border-color: #353535;
+}
+
+#tipjarrow {
+    background-color: #ffffff;
+}
+
+#address {
+    font-family: Monaco, monospace;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(78, 92, 110);
+}
+
 .buttons {
     border-width: 2px;
     border-style: solid;
